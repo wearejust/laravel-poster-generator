@@ -1,0 +1,33 @@
+{
+    "name": "wearejust/postergenerator",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Cees van Egmond",
+            "email": "cees.vanegmond@wearejust.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "jakoch/phantomjs-installer": "^2.1",
+        "jonnyw/php-phantomjs": "4.*",
+        "illuminate/support": "^5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Just\\PosterGenerator\\": "src/"
+        }
+    },
+    "config": {
+        "preferred-install": "dist",
+        "bin-dir": "bin"
+    },
+    "post-install-cmd": [
+        "PhantomInstaller\\Installer::installPhantomJS"
+    ],
+    "post-update-cmd": [
+        "PhantomInstaller\\Installer::installPhantomJS"
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
