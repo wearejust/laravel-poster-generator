@@ -1,4 +1,6 @@
 # Laravel poster generator
+<b>NOTE: Package is still in development, use it at your own cause</b>
+
 This collection of classes will enable you to generate `posters` quickly using `PhantomJS`. It enables the developer to easiliy implement an poster in HTML/CSS/JavaScript and let PhantomJS capture this into a image or PDF.
 
 ## Installation
