@@ -9,7 +9,7 @@
     ],
     "require": {
         "php": ">=5.5.9",
-        "jakoch/phantomjs-installer": "^2.1",
+        "jakoch/phantomjs-installer": "2.1.1",
         "jonnyw/php-phantomjs": "4.*",
         "illuminate/support": "^5"
     },
