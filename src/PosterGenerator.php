@@ -96,9 +96,12 @@ class PosterGenerator
      */
     private function getPhantomJS()
     {
+        $path = 'bin' . DIRECTORY_SEPARATOR . 'phantomjs';
+        if (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN') $path .= '.exe';
+        
         $phantom = PhantomJS::getInstance();
-        $phantom->getEngine()->setPath(base_path('bin/phantomjs'));
-
+        $phantom->getEngine()->setPath(base_path($path));
+        
         return $phantom;
     }
 
