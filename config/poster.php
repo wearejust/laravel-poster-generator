@@ -4,16 +4,15 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Save directory IMG/PDF
+    | Default filesystem
     |--------------------------------------------------------------------------
     |
-    | Please specify the directory where to save images/pdfs
-    | Note that this directory is relative from the
-    | public folder
+    | The filesystems on which to store added files and derived images by default.
+    | one of the filesystems you configured in app/config/filesystems.php
     |
     */
 
-    'saveDirectory' => '/cache',
+    'defaultFilesystem' => 'posters',
 
     /*
     |--------------------------------------------------------------------------
