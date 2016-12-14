@@ -91,7 +91,7 @@ class PosterGenerator
                 $request = $phantom->getMessageFactory()->createPdfRequest($route);
                 break;
             default:
-                throw new Exception('Cannot make capture of [%s]', $file->getExtension());
+                throw new Exception(sprintf('Cannot make capture of [%s]', $file->getExtension()));
                 break;
         }
 

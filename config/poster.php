@@ -4,6 +4,18 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Temporary storage directory
+    |--------------------------------------------------------------------------
+    |
+    | The directory that will be used to store the temporary capture file.
+    | after the capture the file will be moved to the filesystem.
+    |
+    */
+
+    'tempDirectory' => storage_path('posters'),
+
+    /*
+    |--------------------------------------------------------------------------
     | Default filesystem
     |--------------------------------------------------------------------------
     |
