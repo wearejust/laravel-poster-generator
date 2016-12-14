@@ -38,20 +38,6 @@ class Filesystem
     }
 
     /**
-     * @param $path
-     * @return string
-     */
-    public function url($path)
-    {
-        return sprintf(
-            'https://s3-eu-west-1.amazonaws.com/%s/%s/%s',
-            env('AWS_BUCKET'),
-            'posters',
-            $path
-        );
-    }
-
-    /**
      * @return \Illuminate\Contracts\Filesystem\Filesystem
      */
     public function getDisk()
