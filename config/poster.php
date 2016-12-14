@@ -4,16 +4,27 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Save directory IMG/PDF
+    | Temporary storage directory
     |--------------------------------------------------------------------------
     |
-    | Please specify the directory where to save images/pdfs
-    | Note that this directory is relative from the
-    | public folder
+    | The directory that will be used to store the temporary capture file.
+    | after the capture the file will be moved to the filesystem.
     |
     */
 
-    'saveDirectory' => '/cache',
+    'tempDirectory' => storage_path('posters'),
+
+    /*
+    |--------------------------------------------------------------------------
+    | Default filesystem
+    |--------------------------------------------------------------------------
+    |
+    | The filesystems on which to store added files and derived images by default.
+    | one of the filesystems you configured in app/config/filesystems.php
+    |
+    */
+
+    'defaultFilesystem' => 'posters',
 
     /*
     |--------------------------------------------------------------------------
