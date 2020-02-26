@@ -101,6 +101,10 @@ class PosterGenerator
         
         $phantom = PhantomJS::getInstance();
         $phantom->getEngine()->setPath(base_path($path));
+        $phantom->getEngine()->setOptions([
+            '--ssl-protocol=tlsv1.2',
+            '--ssl-ciphers=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384'
+        ]);
         
         return $phantom;
     }
